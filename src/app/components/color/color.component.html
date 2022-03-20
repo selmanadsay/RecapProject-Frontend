@@ -1,0 +1,11 @@
+  
+  <ul class="list-group">
+    <li style="cursor: pointer; background-color:rgb(133, 207, 207)" class="text-white" [class]="getAllColorClass()" routerLink="/cars">Tüm Renkler</li>
+    <li style="cursor: pointer; background-color:rgb(36, 32, 32)" class="text-white" (click)="setCurrentColor(color)" 
+    routerLink="/cars/color/{{color.colorId}}"
+    [class]="getCurrentColorClass(color)" *ngFor="let color of colors">{{ color.colorName }}</li>
+  </ul>
+
+
+
+  
