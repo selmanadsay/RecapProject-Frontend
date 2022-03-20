@@ -20,7 +20,7 @@
     <tr *ngFor="let car of cars">
       <td>{{ car.description }}</td>
       <td>{{ car.modelYear }}</td>
-      <td>{{ car.dailyPrice}}</td>
+      <td>{{ car.dailyPrice}} </td>
       <td >
       <button (click)="setCurrentCar(car)" 
       routerLink = "/cars/cardetail/{{car.id}}" href="#" class="btn btn-secondary btn-outline-dark"  type="button"> İncele </button>
